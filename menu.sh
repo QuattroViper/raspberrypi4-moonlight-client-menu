@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Hosts: add your PC IPs / names here
-HOSTS=("Yahne" "Marno")
-HOST_NAMES=("192.168.178.6" "192.168.178.142")
+HOSTS=("192.168.178.6" "192.168.178.142")
+HOST_NAMES=("Yahne" "Marno")
 
 # Menu loop
 while true; do
