@@ -22,7 +22,7 @@ while true; do
                 HOST_INDEX=$HOST_CHOICE
                 HOST=${HOSTS[$HOST_INDEX]}
                 echo "Starting stream from $HOST..."
-                moonlight stream -app Desktop -1080 -60fps -bitrate 20000 -codec h264 $HOST
+                moonlight stream -app Desktop -1080 -50fps -bitrate 40000 -codec h264 -packetsize 1392 $HOST
             fi
             ;;
         2)
