@@ -1,0 +1,19 @@
+[Unit]
+Description=Moonlight Menu
+After=network-online.target bluetooth.service
+Wants=network-online.target
+
+[Service]
+User=moonlight-tv
+ExecStart=/home/moonlight-tv/raspberrypi4-moonlight-client-menu/menu.sh
+Restart=always
+StandardInput=tty
+StandardOutput=inherit
+StandardError=inherit
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
